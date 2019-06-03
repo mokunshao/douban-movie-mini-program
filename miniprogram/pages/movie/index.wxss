@@ -1,1 +1,35 @@
 /* pages/movie/index.wxss */
+
+.movieItem {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.movieImg {
+  width: 200rpx;
+  height: 300rpx;
+  margin-right: 10px;
+}
+
+.movieInfo {
+  flex: 1;
+}
+
+.movieTitle {
+  color: #666;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+
+.movieScore {
+  color: orange;
+}
+
+.movieComment {
+  background: #e54847;
+  color: white;
+  font-size: 26rpx;
+  margin-left: auto;
+  float: right;
+}

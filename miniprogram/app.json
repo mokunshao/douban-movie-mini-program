@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/movie/index",
+    "pages/comment/index",
     "pages/profile/index"
   ],
   "window": {

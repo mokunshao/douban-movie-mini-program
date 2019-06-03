@@ -1,2 +1,17 @@
 <!--pages/movie/index.wxml-->
-<text>pages/movie/index.wxml</text>
+<view class='movieItem' wx:for="{{movieList}}" wx:key="{{index}}">
+  <image class='movieImg' src='{{item.images.small}}'></image>
+  <view class='movieInfo'>
+    <view class='movieTitle'>{{item.title}}</view>
+    <view>评分:
+      <text class='movieScore'>{{item.rating.average}}</text>
+    </view>
+    <view>
+      主演:
+      <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
+    </view>
+    <view>年份:{{item.year}}</view>
+    <button class='movieComment' bindtap='goToComment' data-movieId='{{item.id}}'>评价</button>
+  </view>
+</view>
+<!-- <van-button type="danger">危险按钮</van-button> -->
