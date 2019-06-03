@@ -1,6 +1,6 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
-var rp = require('request-promise');
+const rp = require('request-promise');
 
 cloud.init()
 

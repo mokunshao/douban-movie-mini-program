@@ -11,7 +11,7 @@
       <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
     </view>
     <view>年份:{{item.year}}</view>
-    <button class='movieComment' bindtap='goToComment' data-movieId='{{item.id}}'>评价</button>
+    <button class='movieComment' bindtap='goToComment' data-movieid='{{item.id}}'>评价</button>
   </view>
 </view>
 <!-- <van-button type="danger">危险按钮</van-button> -->

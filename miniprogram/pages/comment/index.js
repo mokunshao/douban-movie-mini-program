@@ -5,14 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    detail: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    console.log(options)
+    wx.showLoading({
+      title: '加载中',
+    })
+    wx.cloud.callFunction({
+      name: 'getDetail',
+      data: {
+        movieid: options.movieid
+      }
+    }).then(res => {
+      this.setData({
+        detail: JSON.parse(res.result)
+      })
+      wx.hideLoading()
+    }).catch(err => {
+      console.log(err)
+      wx.hideLoading()
+    })
   },
 
   /**

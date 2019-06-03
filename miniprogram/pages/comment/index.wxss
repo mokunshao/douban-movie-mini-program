@@ -1,1 +1,42 @@
 /* pages/comment/index.wxss */
+
+.detailContainer {
+  height: 410rpx;
+  filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+.detailMask {
+  position: absolute;
+  height: 410rpx;
+  background-color: #333;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.detailInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  color: white;
+  height: 410rpx;
+  overflow: hidden;
+}
+
+.detailImg {
+  height: 387rpx;
+  width: 270rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.detail {
+  padding: 10rpx;
+  flex: 1;
+}
+
+.detailSummary {
+  padding: 10rpx;
+}

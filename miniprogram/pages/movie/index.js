@@ -8,9 +8,8 @@ Page({
     movieList: []
   },
   goToComment(event) {
-    console.log(event.currentTarget.dataset.movieid)
     wx.navigateTo({
-      url: `../comment/index?movieId=${event.currentTarget.dataset.movieid}`,
+      url: `../comment/index?movieid=${event.currentTarget.dataset.movieid}`,
     })
   },
   getMovieList() {
