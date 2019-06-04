@@ -1,16 +1,26 @@
 <!--pages/comment/index.wxml-->
 <view class='comment'>
-  <view class='detailMask'></view>
-  <view class='detailContainer' style='background: url({{detail.images.small}}) no-repeat top/cover'></view>
+  <view class='detailMask'>
+    <view class='detailBackground' style='background: url({{detail.images.small}}) no-repeat top/cover'></view>
+  </view>
   <view class='detailInfo'>
     <image class='detailImg' src='{{detail.images.large}}'></image>
     <view class='detail'>
       <view>{{detail.title}}</view>
       <view>{{detail.original_title}}</view>
       <view>{{detail.rating.average}}分</view>
-      <view>{{detail.countries[0]}}{{detail.durations[0]?' / '+detail.durations[0]:null}}</view>
+      <view>{{detail.countries[0]}}{{detail.durations[0]?' / '+detail.durations[0]:''}}</view>
       <view>导演: {{detail.directors[0].name}}</view>
     </view>
   </view>
   <view class='detailSummary'>{{detail.summary}}</view>
+  <van-cell-group>
+    <van-field value="{{ content }}" placeholder="请输入评论" type="textarea" bind:change='onCommentChange' autosize border="{{ false }}" />
+  </van-cell-group>
+  <van-rate value="{{ rate }}" bind:change="onRateChange" />
+  <van-button type="warning" bindtap='uploadImg'>上传图片</van-button>
+  <view>
+    <image class='commentImg' wx:for='{{images}}' wx:key='{{index}}' src='{{item}}'></image>
+  </view>
+  <van-button type="danger" size='large' bindtap='submitComment'>发表评论</van-button>
 </view>

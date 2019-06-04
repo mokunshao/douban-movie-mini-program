@@ -1,18 +1,13 @@
 /* pages/comment/index.wxss */
+.detailMask {
+  height: 410rpx;
+  background-color: #333;
+}
 
-.detailContainer {
+.detailBackground {
   height: 410rpx;
   filter: blur(40rpx);
   opacity: 0.4;
-}
-
-.detailMask {
-  position: absolute;
-  height: 410rpx;
-  background-color: #333;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .detailInfo {
@@ -39,4 +34,10 @@
 
 .detailSummary {
   padding: 10rpx;
+}
+
+.commentImg{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
 }

@@ -14,4 +14,3 @@
     <button class='movieComment' bindtap='goToComment' data-movieid='{{item.id}}'>评价</button>
   </view>
 </view>
-<!-- <van-button type="danger">危险按钮</van-button> -->
