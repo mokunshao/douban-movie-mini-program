@@ -1,4 +1,14 @@
 /* pages/comment/index.wxss */
+page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment{
+  flex: 1;
+}
+
 .detailMask {
   height: 410rpx;
   background-color: #333;

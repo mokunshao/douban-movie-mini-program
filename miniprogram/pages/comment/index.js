@@ -61,6 +61,7 @@ Page({
         wx.showToast({
           title: '评价成功',
         })
+        
       }).catch(() => {
         wx.hideLoading()
         wx.showToast({

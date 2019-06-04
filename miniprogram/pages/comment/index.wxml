@@ -22,5 +22,5 @@
   <view>
     <image class='commentImg' wx:for='{{images}}' wx:key='{{index}}' src='{{item}}'></image>
   </view>
-  <van-button type="danger" size='large' bindtap='submitComment'>发表评论</van-button>
 </view>
+<van-button type="danger" size='large' bindtap='submitComment'>发表评论</van-button>
