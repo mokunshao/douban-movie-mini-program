@@ -1,1 +1,28 @@
 /* pages/profile/index.wxss */
+
+.profile {
+  background: #e54847;
+  height: 400rpx;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.profileImg {
+  width: 200rpx;
+  height: 200rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.message {
+  text-align: center;
+  padding-top: 30rpx;
+}
+
+button {
+  background-color: #f2f2f2;
+  color: black;
+}

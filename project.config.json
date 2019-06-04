@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -54,6 +54,13 @@
 					"name": "test",
 					"pathName": "pages/comment/index",
 					"query": "movieid=26584183",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile",
+					"pathName": "pages/profile/index",
+					"query": "",
 					"scene": null
 				}
 			]
